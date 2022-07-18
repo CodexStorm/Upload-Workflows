@@ -1,0 +1,12 @@
+name: 'Read JS Files'
+description: 'To Read multiple JS files and send it as a list of contents'
+inputs:
+  directoryPath:
+    description: 'path to script directory'
+    required: true
+outputs:
+  listOfScripts:
+      description: 'List of scripts'
+runs:
+  using: 'node16'
+  main: 'index.js'
