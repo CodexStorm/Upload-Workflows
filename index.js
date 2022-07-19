@@ -24,7 +24,7 @@ try {
         });
     });
 
-    core.setOutput("listOfScripts", data);
+    console.log(JSON.stringify(data))
 
 } catch (error) {
     core.setFailed(error.message);

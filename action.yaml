@@ -4,9 +4,7 @@ inputs:
   directoryPath:
     description: 'path to script directory'
     required: true
-outputs:
-  listOfScripts:
-      description: 'List of scripts'
+
 runs:
   using: 'node16'
   main: 'index.js'
