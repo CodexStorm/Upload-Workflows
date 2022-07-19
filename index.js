@@ -16,7 +16,7 @@ try {
         var data = []
         //listing all files using forEach
         files.forEach(function (file) {
-            const contents = readFileSync(file, 'utf-8');
+            const contents = fs.readFileSync(file, 'utf-8');
             data.push({
                 file,
                 contents
