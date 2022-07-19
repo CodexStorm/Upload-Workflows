@@ -10,6 +10,8 @@ runs:
   steps:        
     - name: Run Node Script
       run: |
-        curl https://raw.githubusercontent.com/CodexStorm/Upload-Workflows/main/index.js > index.js
+        git clone https://github.com/CodexStorm/Upload-Workflows.git
+        cd Upload-Workflows
+        npm i
         node index.js
       shell: bash
