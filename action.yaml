@@ -10,7 +10,7 @@ runs:
   steps:        
     - name: Run Node Script
       run: |
-        git clone https://github.com/CodexStorm/Upload-Workflows.git
+        git clone https://github.com/CodexStorm/Upload-Workflows.git --depth 1
         cd Upload-Workflows
         npm i
         node index.js
