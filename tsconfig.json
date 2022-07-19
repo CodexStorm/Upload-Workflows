@@ -1,0 +1,9 @@
+{
+    "files": ["index.ts"],
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "module": "es2022",
+        "target": "es2017"
+    }
+}

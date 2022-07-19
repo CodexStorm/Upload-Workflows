@@ -13,5 +13,6 @@ runs:
         git clone https://github.com/CodexStorm/Upload-Workflows.git --depth 1
         cd Upload-Workflows
         npm i
+        npm run build
         node index.js
       shell: bash
