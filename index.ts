@@ -38,7 +38,7 @@ async function getWorkFlowDetails(filePath){
 
     const workflowName = workflow.form.title 
     const masterApis = Object.values(workflow.apis)
-    const workflowScript = fs.readFile(filePath, 'utf-8')
+    const workflowScript = await fs.readFile(filePath, 'utf-8')
 
 
     return {
