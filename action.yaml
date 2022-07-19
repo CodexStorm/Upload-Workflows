@@ -4,7 +4,11 @@ inputs:
   directoryPath:
     description: 'path to script directory'
     required: true
-
+  
 runs:
-  using: 'node16'
-  main: 'index.js'
+  using: "composite"
+  steps:        
+    - name: Run Node Script
+      run: |
+        node index.js
+      shell: bash
