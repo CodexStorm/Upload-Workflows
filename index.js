@@ -23,6 +23,7 @@ try {
         });
     });
 
+    
     console.log(JSON.stringify(data))
 
 } catch (error) {
