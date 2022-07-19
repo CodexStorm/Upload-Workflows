@@ -1,5 +1,5 @@
 {
-    "files": ["index.ts"],
+    "files": ["test.ts"],
     "compilerOptions": {
         "moduleResolution": "node",
         "esModuleInterop": true,
