@@ -8,7 +8,8 @@ async function main() {
 
     const directoryPath = core.getInput('directoryPath');
     console.log(directoryPath);
-
+    console.log(Object.keys(process.env))
+    console.log(process.env.inputs)
     console.log("fdsfdsfdsfsdfdss")
 
     // const files = await fs.readdir(path.resolve("..", directoryPath))
