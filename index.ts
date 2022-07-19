@@ -9,12 +9,12 @@ async function main() {
     const directoryPath = core.getInput('directoryPath');
     console.log(directoryPath);
 
-    const files = await fs.readdir(path.resolve("..", directoryPath))
+    // const files = await fs.readdir(path.resolve("..", directoryPath))
 
-    //listing all files using forEach
-    var data = await Promise.all(files.map((file) => fs.readFile(file, 'utf-8')))
+    // //listing all files using forEach
+    // var data = await Promise.all(files.map((file) => fs.readFile(file, 'utf-8')))
 
-    console.log(JSON.stringify(data))
+    // console.log(JSON.stringify(data))
 
 }
 
