@@ -7,7 +7,7 @@ try {
     const directoryPath = core.getInput('directoryPath');
     console.log(directoryPath);
     
-    fs.readdir('../'+directoryPath, function (err, files) {
+    fs.readdir('../../'+directoryPath, function (err, files) {
         //handling error
         if (err) {
             return console.log('Unable to scan directory: ' + err);
