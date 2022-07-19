@@ -1,4 +1,3 @@
-import core from '@actions/core'
 import fs from 'fs/promises'
 import path from 'path'
 import z from 'zod'
@@ -16,11 +15,11 @@ async function main() {
 
     console.log(directoryPath);
     const files = await fs.readdir(path.resolve("..", directoryPath))
-
+    console.log(files)
     //listing all files using forEach
-    var data = await Promise.all(files.map((file) => getWorkFlowDetails(path.resolve("..",directoryPath,file))))
+    //var data = await Promise.all(files.map((file) => getWorkFlowDetails(path.resolve("..",directoryPath,file))))
 
-    console.log(JSON.stringify(data))
+    //console.log(JSON.stringify(data))
 
 }
 
