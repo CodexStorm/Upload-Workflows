@@ -8,10 +8,7 @@ async function main() {
 
     const directoryPath = core.getInput('directoryPath');
     console.log(directoryPath);
-    console.log(Object.keys(process.env))
-    console.log(process.env.inputs)
-    console.log("fdsfdsfdsfsdfdss")
-
+    console.log(process.argv)
     // const files = await fs.readdir(path.resolve("..", directoryPath))
 
     // //listing all files using forEach

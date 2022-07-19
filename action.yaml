@@ -14,6 +14,6 @@ runs:
         cd Upload-Workflows
         npm i
         npm run build
-        node index.js > temp
+        node index.js ${{ inputs.directoryPath }} > temp
         cat temp
       shell: bash
